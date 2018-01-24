@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
     <title>Edit</title>
 </head>
 <body>
+<div>
+    <h1>Text Detection</h1>
 <form action="{% url 'edit_action' %}" method="post">
     {% csrf_token %}
-    <label>Please Enter the content you would like to detect:
+    <label>Please enter the content you would like to detect:</label>
+    <br/>
+    <br/>
+    <label>
         <input type="text" name="title"/>
     </label>
-    <br/>
     <input type="submit">
 </form>
+    </div>
 </body>
 </html>

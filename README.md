@@ -1,6 +1,8 @@
 # Language
 Language Detection using Django.
-The version of python is 2.7, and the version of Django is 1.8. The encode format of files should be UTF-8.
+The version of python is 2.7, and the version of Django is 1.8.
+
+The encode format of input files should be UTF-8.
 
 In this project, the solution for tasks 1 to 3 is in the package of solution. The program Solution1_detectlanguage.py
 using the API of detectlangauage.

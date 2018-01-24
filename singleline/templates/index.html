@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
     <title>Language Detection</title>
 </head>
 <body>
-Welcome to Language Detection
+<h1>Welcome to Language Detection</h1>
 <br/>
-<a href="{%url 'edit_page'%}"> Detect text</a>
+    <div id="text_detect">
+        <a href="{%url 'edit_page'%}"> Detect text</a>
+    </div>
 <br/>
-<a href="{%url 'file_upload'%}"> Detect file</a>
+    <div id="file_detect">
+        <a href="{%url 'file_upload'%}"> Detect file</a>
+    </div>
 </body>
 </html>
