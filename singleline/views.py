@@ -3,6 +3,10 @@ import json
 from django.shortcuts import render
 
 
+def index(request):
+    return render(request, 'index.html')
+
+
 def edit_page(request):
     return render(request, 'hometext.html')
 
