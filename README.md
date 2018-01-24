@@ -10,4 +10,5 @@ One is singleline which detect the language for a given input from a text field.
 The other is uploader where user can upload a file to the system, and then get the language of the content in this file.
 
 You can open the link of localhost:8000 to visit the home page of the Django project.
-In the home page you will find two links for language detection.
+In the home page you will find two links for language detection. One is for text detect, where you can find the results
+for both CloudMeaning and detectlanguage. The other is for file detection.
