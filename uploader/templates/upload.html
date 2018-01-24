@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Detect File</title>
 </head>
 <body>
     <div style="padding:40px;margin:40px;border:1px solid #ccc">
@@ -13,10 +13,10 @@
         <button type="submit">Upload</button>
     </form>
     {% if uploaded_file_url %}
-    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a> {{ lang }}</p>
+        <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a> <strong>{{ lang }}</strong></p>
     {% endif %}
 
-  <p><a href="{% url 'home_page' %}">Return to home</a></p>
+  <p><a href="{% url 'home_page' %}">Return to Home Page</a></p>
 </div>
 </body>
 </html>
