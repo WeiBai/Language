@@ -14,7 +14,7 @@
 </head>
 <body>
 <div>
-    <h1>Text Detection</h1>
+    <h1>Text Language Detection</h1>
 <form action="{% url 'edit_action' %}" method="post">
     {% csrf_token %}
     <label>Please enter the content you would like to detect:</label>
@@ -26,5 +26,9 @@
     <input type="submit">
 </form>
     </div>
+<br/>
+<div>
+    <a href="{%url 'home_page'%}">Back to Home Page</a>
+</div>
 </body>
 </html>
