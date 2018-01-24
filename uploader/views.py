@@ -1,4 +1,8 @@
-#coding: utf-8
+# encoding=utf8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+from django.utils.encoding import smart_str, smart_unicode
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 import requests
