@@ -7,6 +7,7 @@ from django.utils.encoding import smart_str, smart_unicode
 
 import requests
 import json
+import detectlanguage
 from django.shortcuts import render
 
 
@@ -33,4 +34,9 @@ def edit_action(request):
 
     language = data['language_list'][0]['name']
 
-    return render(request, 'lang.html', {'language': language})
+    # detectlanguage API
+    detectlanguage.configuration.api_key = "7750ba3cec7607c4e9a95584b94bb464"
+    result = detectlanguage.detect(title)
+    lang = result[0]['language']
+
+    return render(request, 'lang.html', {'language': language, 'lang': lang})
